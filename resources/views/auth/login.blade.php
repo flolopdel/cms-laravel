@@ -9,19 +9,19 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <link rel="stylesheet" href="{{ URL::asset('css/cms-laravel/bootstrap.min.css') }}" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/cms-laravel/font-awesome.min.css') }}">
 
     <!-- Ionicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/cms-laravel/ionicons.min.css') }}">
 
-    <!-- Theme style -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.3/css/AdminLTE.min.css">
+     <!-- Theme style -->
+    <link rel="stylesheet" href="{{ URL::asset('css/cms-laravel/AdminLTE.min.css') }}">
 
     <!-- iCheck -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.3/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/cms-laravel/_all-skins.min.css') }}">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -87,13 +87,13 @@
     <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+            <!-- jQuery 2.1.4 -->
+<script src="{{ URL::asset('js/cms-laravel/jquery.min.js') }}"></script>
+<script src="{{ URL::asset('js/cms-laravel/bootstrap.min.js') }}"></script>
+<script src="{{ URL::asset('js/cms-laravel/icheck.min.js') }}"></script>
 
 <!-- AdminLTE App -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.3/js/app.min.js"></script>
+<script src="{{ URL::asset('js/cms-laravel/app.min.js') }}"></script>
 <script>
     $(function () {
         $('input').iCheck({
