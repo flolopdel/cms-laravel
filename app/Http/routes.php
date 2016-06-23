@@ -12,7 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::group(['prefix' => 'api'], function()
+{
+	Route::resource('authenticate', 'AuthenticateController', ['only' => ['index']]);
+	Route::post('authenticate', 'AuthenticateController@authenticate');
+
+	Route::group(['namespace' => 'API','middleware' => 'jwt.auth'], function () {
+	    require config('infyom.laravel_generator.path.api_routes');
+	});
 });
 
 
@@ -22,10 +32,8 @@ Route::get('/', function () {
 |--------------------------------------------------------------------------
 */
 
-Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
-    Route::group(['prefix' => 'v1'], function () {
-        require config('infyom.laravel_generator.path.api_routes');
-    });
+Route::group(['prefix' => 'api', 'namespace' => 'API','middleware' => 'jwt.auth'], function () {
+    require config('infyom.laravel_generator.path.api_routes');
 });
 
 Route::get('login', 'Auth\AuthController@getLogin');
@@ -54,8 +62,4 @@ Route::post('generator_builder/generate', '\InfyOm\GeneratorBuilder\Controllers\
 Route::group(['middleware' => 'auth'], function () {
     
 });
-
-
-
-
 

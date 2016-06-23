@@ -19,3 +19,6 @@
 
 
 
+
+
+Route::resource('teachingPoints', 'TeachingPointsAPIController');
