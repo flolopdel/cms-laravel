@@ -8,3 +8,5 @@ Instalación:
 3. php artisan vendor:publish
 4. php artisan key:generate
 5. php artisan cache:clear
+6. php artisan infyom.publish:templates
+7. php artisan infyom.publish:layout
