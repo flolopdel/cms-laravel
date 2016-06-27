@@ -6,7 +6,7 @@
 		.module('authApp')
 		.controller('UserController', UserController);
 
-	function UserController($http) {
+	function UserController($http, $auth, $state) {
 
 		var vm = this;
 
@@ -33,6 +33,18 @@
 				vm.teachingPoints = teachingPoints;
 			}).error(function(error) {
 				vm.error = error;
+			});
+		}
+
+		vm.logout = function() {
+
+			// Use Satellizer's $auth service to logout
+			$auth.logout().then(function(data) {
+
+				// If logout is successful, redirect to the auth state
+				$state.go('auth');
+			}, function(error) {
+				console.log(error);
 			});
 		}
 	}

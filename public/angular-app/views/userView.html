@@ -3,6 +3,7 @@
 		<h3>Users</h3>
 		<button class="btn btn-primary" style="margin-bottom: 10px" ng-click="user.getUsers()">Get Users!</button>
 		<button class="btn btn-primary" style="margin-bottom: 10px" ng-click="user.getTeachingPoint()">Get Teaching Point!</button>
+		<button class="btn btn-primary" style="margin-bottom: 10px" ng-click="user.logout()">Logout</button>
 		<ul class="list-group" ng-if="user.users">
 			<li class="list-group-item" ng-repeat="user in user.users">
 				<h4>{{user.name}}</h4>
