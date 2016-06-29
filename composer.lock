@@ -4,9 +4,61 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a70235ae8386533da6a15ea5ec65235b",
-    "content-hash": "9a1e3004830abbe75f945ed50d446d64",
+    "hash": "37d5683eb10b60bb2861c37f59833d77",
+    "content-hash": "bea834806daf0b2105a40460ed1194ec",
     "packages": [
+        {
+            "name": "adldap2/adldap2",
+            "version": "v5.2.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Adldap2/Adldap2.git",
+                "reference": "b72cd7ec6d9734e2a8ba8af69b5b279ee24c325f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Adldap2/Adldap2/zipball/b72cd7ec6d9734e2a8ba8af69b5b279ee24c325f",
+                "reference": "b72cd7ec6d9734e2a8ba8af69b5b279ee24c325f",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/collections": "1.3.*",
+                "ext-ldap": "*",
+                "php": ">=5.4.26"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Adldap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Bauman",
+                    "email": "steven_bauman@outlook.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP LDAP Library for Active Directory Manipulation.",
+            "keywords": [
+                "active directory",
+                "ad",
+                "adLDAP",
+                "adldap2",
+                "directory",
+                "ldap",
+                "windows"
+            ],
+            "time": "2016-03-29 14:34:03"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.0.0",
@@ -603,6 +655,53 @@
             "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
             "homepage": "https://github.com/dompdf/dompdf",
             "time": "2015-12-07 04:07:13"
+        },
+        {
+            "name": "dsdevbe/ldap-connector",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SaschaDens/ldap-connector.git",
+                "reference": "56c6371fdc59c14bbd90ba926bea55377f0fd129"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SaschaDens/ldap-connector/zipball/56c6371fdc59c14bbd90ba926bea55377f0fd129",
+                "reference": "56c6371fdc59c14bbd90ba926bea55377f0fd129",
+                "shasum": ""
+            },
+            "require": {
+                "adldap2/adldap2": "5.2.*",
+                "ext-ldap": "*",
+                "laravel/framework": "~5.0",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "^2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Dsdevbe\\LdapConnector\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SaschaDens",
+                    "email": "dens.sascha@gmail.com"
+                }
+            ],
+            "description": "Easily authenticate with LDAP in Laravel",
+            "homepage": "https://github.com/SaschaDens/ldap-connector",
+            "keywords": [
+                "laravel",
+                "ldap"
+            ],
+            "time": "2016-04-16 15:47:53"
         },
         {
             "name": "infyomlabs/adminlte-templates",
@@ -2108,16 +2207,16 @@
         },
         {
             "name": "prettus/l5-repository",
-            "version": "2.5.1",
+            "version": "2.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andersao/l5-repository.git",
-                "reference": "a6f52e0d79b91569fee183210765f9401a7b9be8"
+                "reference": "05945e652bfdacd456128d69bcae91701ccc9e32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andersao/l5-repository/zipball/a6f52e0d79b91569fee183210765f9401a7b9be8",
-                "reference": "a6f52e0d79b91569fee183210765f9401a7b9be8",
+                "url": "https://api.github.com/repos/andersao/l5-repository/zipball/05945e652bfdacd456128d69bcae91701ccc9e32",
+                "reference": "05945e652bfdacd456128d69bcae91701ccc9e32",
                 "shasum": ""
             },
             "require": {
@@ -2164,7 +2263,7 @@
                 "model",
                 "repository"
             ],
-            "time": "2016-04-26 15:53:10"
+            "time": "2016-06-27 10:43:22"
         },
         {
             "name": "prettus/laravel-validation",
@@ -3363,16 +3462,16 @@
         },
         {
             "name": "yajra/laravel-datatables-oracle",
-            "version": "v6.12.0",
+            "version": "v6.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables.git",
-                "reference": "4862252d6685521b5a302c018ae6c7cfec19abd9"
+                "reference": "b4a58ea33dc6a550fb82baa2cd54e9288b3ddc80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/4862252d6685521b5a302c018ae6c7cfec19abd9",
-                "reference": "4862252d6685521b5a302c018ae6c7cfec19abd9",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/b4a58ea33dc6a550fb82baa2cd54e9288b3ddc80",
+                "reference": "b4a58ea33dc6a550fb82baa2cd54e9288b3ddc80",
                 "shasum": ""
             },
             "require": {
@@ -3416,7 +3515,7 @@
                 "laravel4",
                 "laravel5"
             ],
-            "time": "2016-06-23 07:37:11"
+            "time": "2016-06-25 08:13:11"
         },
         {
             "name": "zircote/swagger-php",

@@ -21,4 +21,3 @@
 
 
 
-Route::resource('teachingPoints', 'TeachingPointsAPIController');

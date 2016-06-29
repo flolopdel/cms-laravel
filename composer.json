@@ -16,7 +16,8 @@
         "infyomlabs/adminlte-templates": "dev-master",
         "yajra/laravel-datatables-oracle": "~6.0",
         "lucadegasperi/oauth2-server-laravel": "5.1.*",
-        "tymon/jwt-auth": "0.5.*"
+        "tymon/jwt-auth": "0.5.*",
+        "dsdevbe/ldap-connector": "4.0.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -166,7 +166,12 @@ return [
         InfyOm\GeneratorBuilder\GeneratorBuilderServiceProvider::class,
         InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
+
+        /*
+         * Auth angular y ldap auth
+         */
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        Dsdevbe\LdapConnector\LdapConnectorServiceProvider::class,
 
     ],
 

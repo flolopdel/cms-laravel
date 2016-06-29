@@ -34,6 +34,7 @@
     30 => 'InfyOm\\AdminLTETemplates\\AdminLTETemplatesServiceProvider',
     31 => 'Yajra\\Datatables\\DatatablesServiceProvider',
     32 => 'Tymon\\JWTAuth\\Providers\\JWTAuthServiceProvider',
+    33 => 'Dsdevbe\\LdapConnector\\LdapConnectorServiceProvider',
   ),
   'eager' => 
   array (
@@ -57,6 +58,7 @@
     17 => 'InfyOm\\AdminLTETemplates\\AdminLTETemplatesServiceProvider',
     18 => 'Yajra\\Datatables\\DatatablesServiceProvider',
     19 => 'Tymon\\JWTAuth\\Providers\\JWTAuthServiceProvider',
+    20 => 'Dsdevbe\\LdapConnector\\LdapConnectorServiceProvider',
   ),
   'deferred' => 
   array (

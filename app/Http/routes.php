@@ -50,6 +50,6 @@ Route::get('/home', 'HomeController@index');
 
 
 Route::group(['middleware' => 'auth'], function () {
-	Route::resource('teachingPoints', 'TeachingPointsController');
+	
 });
 
