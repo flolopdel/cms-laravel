@@ -36,6 +36,11 @@ return [
     */
 
     'guards' => [
+        'ldap' => [
+            'driver' => 'session',
+            'provider' => 'users-ldap',
+        ],
+
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
@@ -65,7 +70,7 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'users-ldap' => [
             'driver' => 'ldap',
             'adldap' => [
                 'account_suffix'=>  '@vaughan.local',
@@ -78,7 +83,10 @@ return [
                 'admin_password' => '2SIFkMBCmL',
             ],
         ],
-
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
