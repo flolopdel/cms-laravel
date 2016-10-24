@@ -111,3 +111,46 @@ Stack trace:
 #9 /var/www/html/cms-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #10 /var/www/html/cms-laravel/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #11 {main}  
+[2016-10-24 21:38:08] local.ERROR: exception 'Symfony\Component\Console\Exception\CommandNotFoundException' with message 'Command "php" is not defined.' in /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php:515
+Stack trace:
+#0 /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php(183): Symfony\Component\Console\Application->find('php')
+#1 /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /Users/Flori/Documents/workspace/cms-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/Flori/Documents/workspace/cms-laravel/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2016-10-24 21:49:08] local.ERROR: exception 'Symfony\Component\Console\Exception\CommandNotFoundException' with message 'Command "infyom.api" is not defined.
+
+Did you mean one of these?
+    infyom.api:controller
+    infyom.api:requests
+    infyom.api:tests
+    infyom:api' in /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php:515
+Stack trace:
+#0 /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php(183): Symfony\Component\Console\Application->find('infyom.api')
+#1 /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /Users/Flori/Documents/workspace/cms-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/Flori/Documents/workspace/cms-laravel/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2016-10-24 21:49:14] local.ERROR: exception 'Symfony\Component\Console\Exception\CommandNotFoundException' with message 'Command "infyom.api" is not defined.
+
+Did you mean one of these?
+    infyom.api:controller
+    infyom.api:requests
+    infyom.api:tests
+    infyom:api' in /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php:515
+Stack trace:
+#0 /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php(183): Symfony\Component\Console\Application->find('infyom.api')
+#1 /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /Users/Flori/Documents/workspace/cms-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/Flori/Documents/workspace/cms-laravel/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2016-10-24 21:49:18] local.ERROR: exception 'Symfony\Component\Console\Exception\RuntimeException' with message 'Not enough arguments (missing: "model").' in /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Input/Input.php:83
+Stack trace:
+#0 /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Command/Command.php(251): Symfony\Component\Console\Input\Input->validate()
+#1 /Users/Flori/Documents/workspace/cms-laravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(155): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php(794): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php(186): Symfony\Component\Console\Application->doRunCommand(Object(InfyOm\Generator\Commands\API\APIGeneratorCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Users/Flori/Documents/workspace/cms-laravel/vendor/symfony/console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Users/Flori/Documents/workspace/cms-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Users/Flori/Documents/workspace/cms-laravel/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 {main}  
