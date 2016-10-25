@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * @SWG\Definition(
- *      definition="Product",
+ *      definition="ProductType",
  *      required={"name"},
  *      @SWG\Property(
  *          property="id",
@@ -19,17 +19,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *          property="name",
  *          description="name",
  *          type="string"
- *      ),
- *      @SWG\Property(
- *          property="description",
- *          description="description",
- *          type="string"
- *      ),
- *      @SWG\Property(
- *          property="expiry_date",
- *          description="expiry_date",
- *          type="string",
- *          format="date"
  *      ),
  *      @SWG\Property(
  *          property="created_at",
@@ -45,24 +34,19 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *      )
  * )
  */
-class Product extends Model
+class ProductType extends Model
 {
     use SoftDeletes;
 
-    public $table = 'products';
+    public $table = 'product_types';
     
 
     protected $dates = ['deleted_at'];
 
     protected $hidden = ['created_at', 'updated_at', 'deleted_at', 'type_id'];
-    
-    protected $with = ['type'];
 
     public $fillable = [
-        'name',
-        'description',
-        'expiry_date',
-        'type_id'
+        'name'
     ];
 
     /**
@@ -71,9 +55,7 @@ class Product extends Model
      * @var array
      */
     protected $casts = [
-        'name' => 'string',
-        'description' => 'string',
-        'expiry_date' => 'date'
+        'name' => 'string'
     ];
 
     /**
@@ -86,10 +68,10 @@ class Product extends Model
     ];
     
     /**
-     * Get the type that owns the box.
+     * Get the legos for the type.
      */
-    public function type()
+    public function products()
     {
-        return $this->belongsTo('App\Models\ProductType');
+        return $this->hasMany('App\Models\Product');
     }
 }

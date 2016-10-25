@@ -9,16 +9,7 @@
 |
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
 Route::resource('products', 'ProductAPIController');
+
+
+Route::resource('productTypes', 'ProductTypeAPIController');

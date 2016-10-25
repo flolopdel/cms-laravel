@@ -36,6 +36,11 @@ return [
     */
 
     'guards' => [
+        'ldap' => [
+            'driver' => 'session',
+            'provider' => 'users-ldap',
+        ],
+
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
@@ -65,11 +70,23 @@ return [
     */
 
     'providers' => [
+        'users-ldap' => [
+            'driver' => 'ldap',
+            'adldap' => [
+                'account_suffix'=>  '@vaughan.local',
+                'domain_controllers'=>  array(
+                    '5.40.218.132'
+                ), // Load balancing domain controllers
+                'base_dn'   =>  'DC=vaughan,DC=local',
+                //'admin_username' => 'vaughan\inmedia_ldap', // This is required for session persistance in the application
+                'admin_username' => 'inmedia_ldap', // This is required for session persistance in the application
+                'admin_password' => '2SIFkMBCmL',
+            ],
+        ],
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
-
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
