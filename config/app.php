@@ -171,7 +171,6 @@ return [
          * Auth angular y ldap auth
          */
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
-        Dsdevbe\LdapConnector\LdapConnectorServiceProvider::class,
 
     ],
 
